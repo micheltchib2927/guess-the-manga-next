@@ -1,0 +1,14 @@
+
+.topBar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 5rem;
+    color: white;
+    font-family: var(--font-orbitron);
+}
+
+.title{
+    font-size: 1rem;
+}

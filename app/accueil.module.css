@@ -1,0 +1,78 @@
+@keyframes bottom-to-top{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+   }
+}
+
+.presentation{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    animation: bottom-to-top 0.8s ease forwards;
+}
+
+.presentation *{
+    margin-top: 0;
+}
+
+.presentation h2{
+    width: 70%;
+    align-self: center;
+}
+
+.presentation h1{
+    font-family: var(--font-orbitron);
+    background: linear-gradient(rgb(0, 255, 187), rgb(245, 104, 23));
+    background-clip: text;
+    color: transparent;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.category{
+    margin-bottom: 1rem;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+#manga{
+    background: rgba(8, 231, 231, 0.5);
+    animation: bottom-to-top 0.8s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+#anime{
+    background: rgba(255, 106, 0, 0.5);
+    animation: bottom-to-top 0.8s ease forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+#auteur{
+    background: rgba(0, 255, 85, 0.5);
+    animation: bottom-to-top 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}

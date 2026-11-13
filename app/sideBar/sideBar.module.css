@@ -1,0 +1,58 @@
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.sideBarButton{
+    background: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideBarButton img{
+    cursor: pointer;
+}
+
+.categoryList{
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    padding: 10px 10px 0 10px;
+    transform: translateX(100px);
+    transition: 0.5s;
+}
+
+
+.categoryList li{
+    padding-bottom: 0.5rem;
+    margin-top: 5px;
+    border-bottom: 1px solid white;
+}
+
+.categoryList li:first-child{
+    margin-top: 0;
+}
+
+.categoryList li:last-child{
+    border-bottom: none;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.openBar {
+    transform: translateX(0);
+}
