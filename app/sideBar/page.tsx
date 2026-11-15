@@ -23,7 +23,7 @@ export default function SideBar () {
             />
         </button>
         <ul className = {`${styles.categoryList} ${open ? styles.openBar : ""}`}>
-            {categoryList.map(category => <li key={category}><Link className = {styles.link} href = "/">{category}</Link></li>)}
+            {categoryList.map(category => <li key={category}><Link className = {styles.link} href = {category === "Accueil" ? "/" : `/${category.toLowerCase()}`}>{category}</Link></li>)}
         </ul>
     </div>)
 }

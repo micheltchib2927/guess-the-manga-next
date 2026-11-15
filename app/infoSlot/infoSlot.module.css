@@ -1,0 +1,31 @@
+
+@keyframes textTransition{
+    0% {
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+.infoSlot{
+    width: 150px;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    cursor: pointer;
+}
+
+.infoSlot h3{
+    text-align: center;
+}
+
+.revealedSlot{
+    animation: textTransition 1.5s ease forwards;
+    cursor: default;
+}

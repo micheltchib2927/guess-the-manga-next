@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css"
 import { Orbitron, Montserrat } from 'next/font/google'
+import TopBar from './topBar/page'
 
 const orbitron = Orbitron({
     subsets: ["latin"],
@@ -17,7 +18,10 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className = {`${orbitron.variable} ${montserrat.variable}`}>
-      <body>{children}</body>
+      <body>
+        <TopBar/>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
