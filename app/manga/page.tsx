@@ -1,9 +1,9 @@
 import styles from "./manga.module.css"
 import Image from 'next/image'
-import GameBlock from '../gameBlock/page'
+import MangaGameBlock from '../mangaGameBlock/page'
 
 export default function Manga() {
     return(<div className = {styles.mangaPage}>
-        <GameBlock/>
+        <MangaGameBlock/>
     </div>)
 }

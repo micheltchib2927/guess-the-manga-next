@@ -29,3 +29,11 @@
     animation: textTransition 1.5s ease forwards;
     cursor: default;
 }
+
+.revealedSlot .authorText{
+    font-size: 14px;
+}
+
+.revealedSlot .genreText{
+    font-size: 12px;
+}

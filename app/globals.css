@@ -55,4 +55,13 @@ body{
         opacity: 1;
         transform: translateX(0);  
     }
+}
+    
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }*/

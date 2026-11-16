@@ -1,4 +1,24 @@
 
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bottom-to-top{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+   }
+}
+
 .gameBlock{
     margin-top: 0;
     display: flex;
@@ -6,11 +26,23 @@
     align-items: center;
 }
 
+.gameBlock img{
+    animation: fade 1s ease forwards;
+    opacity: 0;
+}
+
+.gameBlock .mysteryBox{
+    animation-delay: 0.4s;
+}
+
 .slotSection{
     margin: 0 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 0;
+    animation: bottom-to-top 1s ease forwards;
+    animation-delay: 0.8s;
 }
 
 .slotSection > *{

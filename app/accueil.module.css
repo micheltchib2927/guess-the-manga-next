@@ -11,6 +11,7 @@
 
 .presentation{
     align-self: center;
+    margin-left: 12px;
     width: 90%;
     display: flex;
     flex-direction: column;
