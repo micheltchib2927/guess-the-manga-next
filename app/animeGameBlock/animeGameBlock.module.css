@@ -1,0 +1,92 @@
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bottom-to-top{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+   }
+}
+
+.gameBlock{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameBlock img{
+    animation: fade 1s ease forwards;
+    opacity: 0;
+}
+
+.gameBlock .mysteryBox{
+    animation-delay: 0.4s;
+}
+
+.slotSection{
+    margin: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: bottom-to-top 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+.slotSection > *{
+    margin: 0 4px 0 4px;
+}
+
+.slotSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slotSection form button{
+    width: 50%;
+    margin-top: 5px;
+    cursor: pointer;
+    background: rgba(8, 231, 231, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 6px;
+}
+
+
+.attemptsMessage{
+    margin-top: 0;
+    font-weight: lighter;
+    color: greenyellow;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.victoryChika{
+    height: 100px;
+    width: 75px
+}
+
+.failed{
+    color: red;
+}
+
+.userAnswer{
+    margin-top: 1rem;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: medium;
+}

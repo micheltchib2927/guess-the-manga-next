@@ -74,6 +74,11 @@
     text-align: center;
 }
 
+.victoryChika{
+    height: 100px;
+    width: 75px
+}
+
 .failed{
     color: red;
 }

@@ -1,0 +1,29 @@
+
+.helpPage{
+    display: flex;
+    flex-direction: column;
+}
+
+.helpPage img{
+    align-self: center;
+}
+
+.rules{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.notesSection{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.notesSection h5{
+    color: greenyellow;
+}
+
+.notesSection ul li{
+    padding-bottom: 10px;
+}

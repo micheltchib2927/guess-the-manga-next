@@ -7,7 +7,7 @@ export async function GET(request){
 
     try{
         const res = await fetch(
-            `https://api.myanimelist.net/v2/manga/${q}?fields=title,main_picture,alternative_titles,start_date,end_date,authors{first_name,last_name},num_volumes,genres`,
+            `https://api.myanimelist.net/v2/manga/${q}?fields=title,main_picture,alternative_titles,start_date,end_date,authors{first_name,last_name},genres,serialization{name}`,
             
             {
                 headers: {"X-MAL-CLIENT-ID": process.env.MAL_CLIENT_ID}

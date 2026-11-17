@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+,     "app/api/animeList/route.jsx",     "app/api/animeList/route.jsx"  ],
   "exclude": ["node_modules"]
 }

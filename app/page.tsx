@@ -10,8 +10,8 @@ export default function Home() {
     </div>
     <div className = {styles.categories}>
       <Link href = "/manga" className = {styles.category} id = {styles.manga}>Trouver un Manga</Link>
-      <Link href = "/" className = {styles.category} id = {styles.anime}>Trouver un Anime</Link>
-      <Link href = "/" className = {styles.category} id = {styles.auteur}>Trouver un Auteur</Link>
+      <Link href = "/anime" className = {styles.category} id = {styles.anime}>Trouver un Anime</Link>
+      <Link href = "/aide" className = {styles.category} id = {styles.auteur}>Comment jouer ?</Link>
     </div>
   </>);
 }

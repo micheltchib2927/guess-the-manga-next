@@ -22,7 +22,7 @@ export default function InfoSlot ({ label, info, value, decrementation} : slotPr
     return(<div style = {{display: "flex", flexDirection: "column", alignItems: "center"}}>
         <h3>{label}</h3>
         <div className = {`${styles.infoSlot} ${revealed ? styles.revealedSlot : ""}`} onClick = {reveal}>
-            <h3 className = {`${label === "Auteur(es)" ? styles.authorText : ""} ${label === "Genres" ? styles.genreText : ""}`}>{revealed ? info : `-${value} points`}</h3>
+            <h3 className = {`${label === "Auteur(es)" || "Studio(s)" ? styles.authorText : ""} ${label === "Genres" ? styles.genreText : ""}`}>{revealed ? info : `-${value} points`}</h3>
         </div>
     </div>)
 }

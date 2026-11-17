@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function SideBar () {
 
-    const categoryList: string[] = ["Accueil", "Manga", "Anime", "Auteur"];
+    const categoryList: string[] = ["Accueil", "Manga", "Anime", "Aide"];
     const [open, setOpen] = useState(false);
 
     function toggleOpen (){
