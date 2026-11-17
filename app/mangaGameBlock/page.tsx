@@ -90,7 +90,7 @@ export default function MangaGameBlock() {
                 const dataList : mangaListTyping = await res.json();
                 console.log(dataList);
 
-                const secondRes = await fetch(`api/manga?q=${dataList.data[id].node.id}`)
+                const secondRes = await fetch(`/api/manga?q=${dataList.data[id].node.id}`)
                 const data : mangaTyping = await secondRes.json();
                 console.log(data);
 

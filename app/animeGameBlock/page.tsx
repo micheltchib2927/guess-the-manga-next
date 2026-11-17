@@ -113,7 +113,7 @@ export default function AnimeGameBlock() {
                 const dataList : animeListTyping = await res.json();
                 console.log(dataList);
 
-                const secondRes = await fetch(`api/anime?q=${dataList.data[id].node.id}`)
+                const secondRes = await fetch(`/api/anime?q=${dataList.data[id].node.id}`)
                 const data : animeTyping = await secondRes.json();
                 const relatedAnimeList = data.related_anime.filter((anime: relatedAnime) =>
                     anime.relation_type === "prequel"
